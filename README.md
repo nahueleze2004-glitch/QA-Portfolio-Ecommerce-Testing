@@ -28,4 +28,4 @@ Implementación de scripts de prueba para validación de regresión automática.
 * **Metodologías:** Black Box Testing, Page Object Model (POM).
 
 ---
-**Autor:** Nahuel Cejas | QA Engineer & SOC Analyst.
+**Autor:** Nahuel Cejas | QA Engineer 
