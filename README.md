@@ -1,3 +1,31 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
 # QA-Portfolio-Ecommerce-Testing
 Pruebas manuales funcionales y de UI para sitio e-commerce (Test Cases, Bug Reports y Test Plan)
 # 🛒 Portfolio QA: Pruebas de E-commerce (SauceDemo)
@@ -25,3 +53,5 @@ Aquí demuestro habilidades clave de QA como la creación de casos de prueba det
 
 ---
 *Este proyecto es parte de mi portafolio profesional como QA Tester.*
+
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, us
