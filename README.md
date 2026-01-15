@@ -1,57 +1,31 @@
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-# QA-Portfolio-Ecommerce-Testing
-Pruebas manuales funcionales y de UI para sitio e-commerce (Test Cases, Bug Reports y Test Plan)
-# 🛒 Portfolio QA: Pruebas de E-commerce (SauceDemo)
+# QA Engineering Portfolio - Swag Labs E-commerce
 
-¡Hola! Soy **Nahuel Cejas**. Este repositorio documenta mi proceso de **Testing Manual** sobre la plataforma de práctica *Swag Labs* (SauceDemo).
+Este repositorio contiene la documentación técnica y los scripts de automatización para la validación de calidad del sitio *Swag Labs* (SauceDemo).
 
-Aquí demuestro habilidades clave de QA como la creación de casos de prueba detallados, ejecución de tests y reporte de incidentes (Bugs) con evidencia.
+El objetivo del proyecto es simular un ciclo de vida de pruebas (STLC) completo, abarcando desde la planificación estratégica hasta la ejecución de pruebas automatizadas E2E, enfocado en la detección temprana de defectos y la estabilidad del producto.
 
-## 📂 Contenido del Repositorio
+## 📂 Documentación del Proyecto
 
-| Artefacto | Descripción | Enlace Rápido |
-|-----------|-------------|---------------|
-| **Casos de Prueba** | Documentación paso a paso para validar funcionalidades críticas como el Login. | [Ver Test Cases](/Test-Cases) |
-| **Reportes de Bugs** | Informes técnicos de errores encontrados, con severidad, pasos para reproducir y evidencia. | [Ver Bug Reports](/Bug-Reports) |
-| **Plan de Pruebas** | Estrategia general (Alcance, herramientas y entorno). | [📂 Ver Plan Maestro](Test-Plans/) |
-### 🤖 Automatización de Pruebas (Engineer Level)
-| Framework | Script Principal | Estado |
-|-----------|------------------|--------|
-| **Cypress** | [📄 Ver Código (Login E2E)](Automation-Cypress/e2e/login.cy.js) | ✅ Implementado |
-## 🛠️ Herramientas y Habilidades
+| Componente | Descripción Técnica | Acceso |
+|------------|---------------------|--------|
+| **Master Test Plan** | Definición del alcance, estrategia de pruebas, riesgos y entorno de ejecución. | [📂 Ver Plan](Test-Plans/) |
+| **Test Scenarios** | Casos de prueba detallados para flujos críticos (Smoke & Regression). | [📂 Ver Test Cases](Test-Cases/) |
+| **Defect Reports** | Reportes de incidentes técnicos con logs, severidad y pasos de reproducción. | [📂 Ver Bug Reports](Bug-Reports/) |
 
-* **Metodología:** Diseño de casos de prueba, Bug Tracking.
-* **Documentación:** Markdown, GitHub.
-* **Entorno de Pruebas:** Web (Chrome/Edge).
+### ⚙️ Automatización (Test Automation)
+
+Implementación de scripts de prueba para validación de regresión automática.
+
+| Framework | Lenguaje | Script Principal | Estado |
+|-----------|----------|------------------|--------|
+| **Cypress** | JavaScript | [📄 login.cy.js](Automation-Cypress/e2e/login.cy.js) | ✅ Stable |
+
+## 🛠️ Stack Tecnológico
+
+* **Automation Framework:** Cypress (E2E Testing).
+* **Lenguaje:** JavaScript (ES6).
+* **Gestión de Defectos:** GitHub Issues / Jira Simulation.
+* **Metodologías:** Black Box Testing, Page Object Model (POM).
 
 ---
-*Este proyecto es parte de mi portafolio profesional como QA Tester.*
-
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, us
+**Autor:** Nahuel Cejas | QA Engineer & SOC Analyst.
