@@ -18,6 +18,7 @@ Al intentar finalizar una compra ingresando caracteres especiales (ej: `Ñ`, `@`
 
 ### 🔴 Comportamiento Actual (El Error)
 La página no avanza y la consola del navegador muestra un error de API (500 Internal Server Error).
+<img width="914" height="402" alt="ejemplo-error-500-servidor-litespeed" src="https://github.com/user-attachments/assets/1793df65-6042-4f29-ac50-bc55fc5959bf" />
 
 ### 🟢 Comportamiento Esperado
 El sistema debería mostrar un mensaje de validación: *"El código postal contiene caracteres inválidos"*.
