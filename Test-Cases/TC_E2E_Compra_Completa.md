@@ -1,26 +1,24 @@
-# 🐞 Bug: Error 500 al procesar Checkout con caracteres especiales
+# 🧪 Test Case: Flujo de Compra Completo (E2E)
 
-**ID Defecto:** DEF-2026-89
-**Severidad:** Crítica (Bloqueante)
-**Ambiente:** Staging (v1.5.2)
-**Reportado por:** Nahuel Cejas
-
----
-
-### 📝 Descripción del Problema
-Al intentar finalizar una compra ingresando caracteres especiales (ej: `Ñ`, `@`) en el campo "Zip Code", la API responde con un error interno del servidor y la UI se congela.
-
-### 🔄 Pasos para Reproducir
-1.  Iniciar flujo de compra estándar.
-2.  Llegar a la pantalla de información (`/checkout-step-one.html`).
-3.  En el campo **Zip/Postal Code**, ingresar: `1234@#`
-4.  Click en "Continue".
-
-### 🔴 Comportamiento Actual (El Error)
-La página no avanza y la consola del navegador muestra un error de API (500 Internal Server Error).
-
-### 🟢 Comportamiento Esperado
-El sistema debería mostrar un mensaje de validación: *"El código postal contiene caracteres inválidos"*.
+**ID:** TC-E2E-001
+**Referencia Jira:** STORY-425
+**Título:** Validar flujo de compra exitoso con usuario estándar
+**Tipo:** Regresión
+**Autor:** Nahuel Cejas
 
 ---
-**Estado:** 🔓 ABIERTO
+
+### 📝 Pre-condiciones
+1.  El usuario no debe tener sesión iniciada.
+2.  Cookies de sesión limpias.
+
+### 👣 Pasos de Ejecución
+
+| # | Acción | Datos de Entrada | Resultado Esperado | Estado |
+|---|--------|------------------|--------------------|--------|
+| 1 | Navegar a la Home y hacer Login | User: `standard_user`<br>Pass: `secret_sauce` | Redirección a `/inventory.html`. Productos visibles. | ✅ PASS |
+| 2 | Agregar "Sauce Labs Backpack" al carrito | Click en btn `Add to cart` | El badge del carrito cambia a "1". | ✅ PASS |
+| 3 | Ingresar al Carrito y dar click en Checkout | N/A | Redirección a `/checkout-step-one.html`. Formulario visible. | ✅ PASS |
+| 4 | Completar formulario de envío | Name: `Nahuel`<br>Last: `Cejas`<br>Zip: `1629` | Los campos aceptan caracteres alfanuméricos. | ✅ PASS |
+| 5 | Confirmar compra (Overview) | Click en `Finish` | Se muestra resumen con Total. | ✅ PASS |
+| 6 | Validar pantalla final | N/A | Mensaje: "THANK YOU FOR YOUR ORDER". | ✅ PASS |
