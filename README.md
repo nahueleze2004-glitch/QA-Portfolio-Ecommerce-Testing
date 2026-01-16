@@ -26,7 +26,8 @@ Validación exitosa del script de Login. Se observan los pasos ejecutados y las 
 
 ![Evidencia Cypress Pass](assets/images/ev
 
-https://github.com/user-attachments/assets/7f17debe-b90e-47a5-b85c-83f8fe111aad
+ width="1365" height="767" alt="evidencia-cypress-final png" src="https://github.com/user-attachments/assets/9b0ca6c8-e42a-4376-a85a-3167dc8a3b9c" />
+85c-83f8fe111aad
 
 idencia-cypress-final.png)
 
