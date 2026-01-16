@@ -36,4 +36,4 @@ Validación exitosa del script de Login. Se observan los pasos ejecutados y las 
 * **Metodologías:** Black Box Testing, Page Object Model (POM).
 
 ---
-**Autor:** Nahuel Cejas | QA Engineer & SOC Analyst.
+**Autor:** Nahuel Cejas | QA Engineer 
