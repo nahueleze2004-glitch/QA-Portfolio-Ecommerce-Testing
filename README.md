@@ -24,7 +24,8 @@ Implementación de scripts de prueba para validación de regresión automática.
 
 Validación exitosa del script de Login. Se observan los pasos ejecutados y las aserciones (validaciones) en estado **PASS**.
 
-![Evidencia Cypress Pass](assets/images/evidencia-cypress-final.png)
+![Evidencia Cypress Pass](assets<img width="1365" height="767" alt="evidencia-cypress-final png" src="https://github.com/user-attachments/assets/8813e37c-f4d5-4837-92fc-443d9177351a" />
+/images/evidencia-cypress-final.png)
 
 ## 🛠️ Stack Tecnológico
 
