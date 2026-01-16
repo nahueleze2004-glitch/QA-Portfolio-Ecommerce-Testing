@@ -20,6 +20,12 @@ Implementación de scripts de prueba para validación de regresión automática.
 |-----------|----------|------------------|--------|
 | **Cypress** | JavaScript | [📄 login.cy.js](Automation-Cypress/e2e/login.cy.js) | ✅ Stable |
 
+### 📸 Evidencia de Ejecución (Snapshot)
+
+Validación exitosa del script de Login. Se observan los pasos ejecutados y las aserciones (validaciones) en estado **PASS**.
+
+![Evidencia Cypress Pass](assets/images/evidencia-cypress-final.png)
+
 ## 🛠️ Stack Tecnológico
 
 * **Automation Framework:** Cypress (E2E Testing).
@@ -28,4 +34,4 @@ Implementación de scripts de prueba para validación de regresión automática.
 * **Metodologías:** Black Box Testing, Page Object Model (POM).
 
 ---
-**Autor:** Nahuel Cejas | QA Engineer 
+**Autor:** Nahuel Cejas | QA Engineer.
