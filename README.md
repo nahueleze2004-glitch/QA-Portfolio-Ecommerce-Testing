@@ -24,12 +24,7 @@ Implementación de scripts de prueba para validación de regresión automática.
 
 Validación exitosa del script de Login. Se observan los pasos ejecutados y las aserciones (validaciones) en estado **PASS**.
 
-![Evidencia Cypress Pass](assets/images/ev
-
- width="1365" height="767" alt="evidencia-cypress-final png" src="https://github.com/user-attachments/assets/9b0ca6c8-e42a-4376-a85a-3167dc8a3b9c" />
-85c-83f8fe111aad
-
-idencia-cypress-final.png)
+![Evidencia Cypress Pass](assets/images/evidencia-cypress-final.png)
 
 ## 🛠️ Stack Tecnológico
 
@@ -39,4 +34,4 @@ idencia-cypress-final.png)
 * **Metodologías:** Black Box Testing, Page Object Model (POM).
 
 ---
-**Autor:** Nahuel Cejas | QA Engineer.
+**Autor:** Nahuel Cejas | QA Engineer
