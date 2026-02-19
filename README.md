@@ -1,4 +1,4 @@
-# QA Engineering Portfolio - Swag Labs E-commerce
+# QA Automation Portfolio  - Swag Labs E-commerce
 
 Este repositorio contiene la documentación técnica y los scripts de automatización para la validación de calidad del sitio *Swag Labs* (SauceDemo).
 
@@ -36,4 +36,4 @@ Validación exitosa del script de Login. Se observan los pasos ejecutados y las 
 * **Metodologías:** Black Box Testing, Page Object Model (POM).
 
 ---
-**Autor:** Nahuel Cejas | QA Engineer 
+**Autor:** Nahuel Cejas | QA Automation 
