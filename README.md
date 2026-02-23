@@ -36,4 +36,4 @@ Validación exitosa del script de Login. Se observan los pasos ejecutados y las 
 * **Metodologías:** Black Box Testing, Page Object Model (POM).
 
 ---
-**Autor:** <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="nahuel-cejas-050452308" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/nahuel-cejas-050452308?trk=profile-badge">Nahuel Cejas</a></div> | QA Automation 
+**Autor:** <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="nahuel-cejas-050452308" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/nahuel-cejas-050452308?trk=profile-badge">Nahuel Cejas</a></div>| QA Automation 
