@@ -26,6 +26,12 @@ Portfolio de QA enfocado en un problema concreto: comprobar que un cliente pueda
 
 **35 escenarios principales.** Los 13 casos web corren en Chromium de escritorio y emulación móvil Pixel 7. La suite anterior de [Cypress](Automation-Cypress/e2e) conserva 11 casos de regresión en un pipeline separado.
 
+## Última validación · 4 de octubre de 2026
+
+**Web: 13/13 en escritorio y 13/13 en móvil · API: 16/16 · SQL: 6/6 · TypeScript: correcto.**
+
+[Ver ejecución en GitHub Actions](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions/runs/37221126304) · [Detalle y artefactos](docs/VALIDATION.md)
+
 ## Sistemas evaluados
 
 - **Web:** [Swag Labs](https://www.saucedemo.com/), una aplicación pública de demostración.
