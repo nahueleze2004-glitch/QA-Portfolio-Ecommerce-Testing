@@ -86,4 +86,10 @@ Las pruebas usan contextos aislados, selectores `data-test`, aserciones sobre es
 
 Proyecto de práctica. La emulación móvil no sustituye pruebas en dispositivos físicos. No incluye pagos reales, carga ni una auditoría de seguridad. La API es una fixture de pruebas, no un servicio para producción; todos los usuarios y datos son ficticios o públicos de la demo.
 
-Siguientes pasos: ampliar navegadores, documentar exploración manual y agregar validaciones de accesibilidad.
+## Próximas mejoras
+
+El trabajo pendiente se organiza en issues con alcance y criterios de aceptación:
+
+- [Compatibilidad con Firefox y WebKit (#3)](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/issues/3).
+- [Controles de accesibilidad (#4)](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/issues/4).
+- [Sesión de testing exploratorio del checkout (#5)](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/issues/5).

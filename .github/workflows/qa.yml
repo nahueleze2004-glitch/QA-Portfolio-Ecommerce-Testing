@@ -58,6 +58,9 @@ jobs:
         if: matrix.project != 'api'
         run: npx playwright install --with-deps chromium
       - run: npx playwright test --project=${{ matrix.project }}
+      - name: Capture successful HTML report
+        if: success() && matrix.project == 'chromium'
+        run: node scripts/capture-report.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
