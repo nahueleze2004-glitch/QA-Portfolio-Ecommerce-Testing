@@ -32,6 +32,12 @@ Portfolio de QA enfocado en un problema concreto: comprobar que un cliente pueda
 
 [Ver ejecución en GitHub Actions](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions/runs/37221126304) · [Detalle y artefactos](docs/VALIDATION.md)
 
+## Captura del reporte
+
+[![Reporte HTML de Playwright: 13 pruebas Chromium aprobadas, sin fallos](assets/playwright-report.png)](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions/runs/37221767239)
+
+Captura del reporte generado por CI el 4 de octubre de 2026, commit `ae970b4`. [Abrir ejecución y descargar el reporte HTML](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions/runs/37221767239). La imagen registra esa ejecución; los indicadores de la portada muestran el estado actual.
+
 ## Sistemas evaluados
 
 - **Web:** [Swag Labs](https://www.saucedemo.com/), una aplicación pública de demostración.
