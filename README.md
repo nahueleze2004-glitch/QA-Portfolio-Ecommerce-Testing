@@ -1,4 +1,6 @@
-# Nahuel Cejas · QA Portfolio
+# Nahuel Cejas | E-commerce QA Portfolio
+
+[![E-commerce E2E](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions/workflows/e2e.yml/badge.svg?branch=main)](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions/workflows/e2e.yml)
 
 **E-commerce testing · Test design · Cypress automation · GitHub Actions**
 
@@ -6,12 +8,25 @@ Portfolio de práctica de Quality Assurance sobre [Swag Labs](https://www.sauced
 
 [LinkedIn](https://www.linkedin.com/in/nahuel-cejas-050452308) · [Plan de pruebas](Test-Plans/TP_Master_Plan.md) · [Matriz de cobertura](Test-Cases/COVERAGE.md) · [Automatización](Automation-Cypress/e2e)
 
+## Resultados verificados
+
+**11 escenarios automatizados · 2 tamaños de pantalla · 3 flujos de negocio**
+
+La ejecución del 4 de octubre de 2026 finalizó correctamente en escritorio (1280 × 800) y viewport móvil (390 × 844). [Ver ejecución y reportes](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions/runs/37219676567) · [Detalle de validación](docs/VALIDATION.md).
+
+| Competencia | Evidencia en el proyecto |
+| --- | --- |
+| Diseño de pruebas | Escenarios positivos, negativos y campos obligatorios vinculados a riesgos |
+| Automatización con JavaScript y Cypress | Comandos reutilizables, aislamiento y aserciones sobre el estado de la aplicación |
+| Integración continua | GitHub Actions con dos configuraciones de pantalla y reportes JUnit |
+| Documentación QA | Plan de pruebas, matriz de cobertura y plantilla de defectos reproducibles |
+
 ## Recorrido para revisar el proyecto
 
 1. **Criterio de QA:** el [plan](Test-Plans/TP_Master_Plan.md) prioriza autenticación y compra por su impacto.
 2. **Diseño de pruebas:** la [matriz](Test-Cases/COVERAGE.md) incluye caminos felices, negativos y validaciones.
 3. **Código:** la suite verifica login, carrito, checkout y cierre de sesión con selectores `data-test` y aserciones de estado.
-4. **Evidencia:** consultar [el registro de validación](docs/VALIDATION.md) y, cuando esté publicado, las ejecuciones de [Actions](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions). Una prueba escrita no equivale a una prueba aprobada.
+4. **Evidencia:** consultar [el registro de validación](docs/VALIDATION.md) y las ejecuciones de [Actions](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions). Una prueba escrita no equivale a una prueba aprobada.
 
 ## Ejecutar localmente
 

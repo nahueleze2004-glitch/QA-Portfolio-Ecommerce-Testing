@@ -1,26 +1,33 @@
-# Registro de validación · 2026-10-04
+# Registro de validación
 
-Base revisada: `248455adc5d9273714b6dbd6379b0f85f122093c`.
+## Ejecución verificada · 2026-10-04
+
+- **Commit evaluado:** [`6e3122d`](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/commit/6e3122dd2090c44ef63e514899923037c7eb3613).
+- **Rama:** `main`, después de integrar el [pull request #1](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/pull/1).
+- **Evidencia:** [GitHub Actions · ejecución 37219676567](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions/runs/37219676567).
+- **Entorno configurado:** Ubuntu 24.04, Node.js 22, Cypress 16.1.1 y navegador Electron.
 
 | Comprobación | Resultado |
 | --- | --- |
-| Sintaxis JavaScript (`node --check`) | Correcta en configuración, soporte y tres specs |
-| Ejecución E2E | Bloqueada: el binario descargado de Cypress no pudo descomprimirse |
-| 11 escenarios automatizados | Implementados; resultados funcionales pendientes |
-| Workflow GitHub Actions | Preparado para ejecutarse al publicar; consultar el resultado en Actions |
-| Publicación de rama | Preparada en una rama de mejora mediante el conector GitHub; integración en `main` pendiente de aprobación |
+| Sintaxis de configuración, soporte y tres specs | Correcta (`node --check`) |
+| Dependencias y lockfile | Versión de Cypress consistente |
+| E2E escritorio · 1280 × 800 | Job completado correctamente |
+| E2E viewport móvil · 390 × 844 | Job completado correctamente |
+| Publicación | Cambios integrados en `main` |
 
-Error observado en la instalación de Cypress 16.1.1: `End of central directory record signature not found. Either not a zip file, or file is truncated.` No se clasifica como defecto de Swag Labs.
+La suite contiene 11 escenarios: 5 de autenticación, 2 de carrito y 4 de checkout. Ambos jobs ejecutan la suite completa. Los resultados corresponden al commit y a la ejecución enlazados; el badge del README muestra el estado de la rama principal.
 
-Las dependencias npm se instalan por separado omitiendo la descarga del binario para comprobar la configuración. Esto no sustituye una ejecución en navegador.
+## Consultar y reproducir evidencia
 
-## Reproducir la validación funcional
+1. Abrir la ejecución enlazada y consultar los pasos **Run E2E** de ambos jobs.
+2. Descargar los artefactos con reportes JUnit y videos mientras estén disponibles. Las capturas se generan ante fallos. La retención configurada es de 14 días.
+3. Para repetir localmente, instalar las dependencias con `npm ci` y ejecutar `npm test` y `npm run test:mobile`.
+4. Para generar JUnit, usar `npm run test:report`.
 
-1. Usar Node.js 22 LTS y ejecutar `npm ci` en una máquina con las dependencias del sistema y descarga del binario de Cypress habilitada.
-2. Ejecutar `npm test` y `npm run test:mobile`.
-3. Generar evidencia con `npm run test:report` o ejecutar el workflow.
-4. Revisar fallos antes de actualizar estados. Registrar fecha, navegador, commit y enlace al run; no marcar PASS por el solo hecho de tener un test implementado.
+## Límites
 
-## Integración del paquete · 2026-10-04
+El viewport móvil no representa un dispositivo real. Esta ejecución no acredita pruebas de API, carga, seguridad ni otros navegadores. La ejecución manual del caso de compra sigue pendiente de evidencia propia.
 
-Se volvió a comprobar la sintaxis de los cinco archivos JavaScript y la coincidencia de la dependencia Cypress entre `package.json` y `package-lock.json`. El bloqueo de instalación descrito arriba corresponde a la preparación original del paquete. Los resultados funcionales de la integración deben consultarse en [GitHub Actions](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions).
+## Antecedente de instalación local
+
+Durante la preparación inicial del paquete, la descarga del binario de Cypress no pudo descomprimirse. Ese bloqueo local no se reprodujo en los jobs exitosos de GitHub Actions y no se atribuye a Swag Labs.

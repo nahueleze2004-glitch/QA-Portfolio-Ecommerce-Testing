@@ -1,7 +1,7 @@
 # Plan de pruebas · Swag Labs
 
 **Responsable del portfolio:** Nahuel Cejas
-**Tipo:** proyecto de práctica · **Estado:** diseñado; ver ejecución en [VALIDATION](../docs/VALIDATION.md)
+**Tipo:** proyecto de práctica · **Estado:** suite automatizada ejecutada en CI; ver resultados en [VALIDATION](../docs/VALIDATION.md)
 **Entorno:** https://www.saucedemo.com · versión de la aplicación no disponible
 
 ## Objetivo y riesgos
@@ -16,7 +16,7 @@
 
 ## Alcance
 
-Autenticación, carrito, persistencia al recargar, checkout de un producto y campos obligatorios. Ejecución automatizada prevista en Electron, a 1280 × 800 y 390 × 844. Cada prueba comienza en un contexto aislado.
+Autenticación, carrito, persistencia al recargar, checkout de un producto y campos obligatorios. Ejecución automatizada en Electron, a 1280 × 800 y 390 × 844. Cada prueba comienza en un contexto aislado.
 
 Fuera de alcance: pagos reales, backend/API, seguridad ofensiva, carga, accesibilidad completa, dispositivos reales y compatibilidad con otros navegadores. Los usuarios de la demo representan comportamientos de prueba, no roles de autorización de un negocio real.
 

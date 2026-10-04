@@ -1,6 +1,7 @@
 # CHECKOUT-001 · Compra completa
 
-**Prioridad:** alta · **Tipo:** funcional / regresión · **Estado:** no ejecutado en esta revisión
+**Prioridad:** alta · **Tipo:** funcional / regresión · **Estado manual:** pendiente de ejecución documentada
+**Estado automatizado:** ejecución CI exitosa el 2026-10-04; ver [evidencia](../docs/VALIDATION.md)
 **Automatización:** [checkout.cy.js](../Automation-Cypress/e2e/checkout.cy.js)
 
 Precondiciones: Swag Labs accesible, almacenamiento limpio, usuario público `standard_user` / `secret_sauce`. Los datos de envío son ficticios.

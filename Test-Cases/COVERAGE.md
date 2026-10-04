@@ -1,6 +1,6 @@
 # Matriz de cobertura
 
-Cada ID aparece en el título del test. Estado de ejecución: pendiente; ver [registro](../docs/VALIDATION.md). Para pruebas manuales usar sesión limpia y datos ficticios.
+Cada ID aparece en el título del test. La suite automatizada finalizó correctamente en escritorio y viewport móvil el 2026-10-04; ver [registro](../docs/VALIDATION.md). Para pruebas manuales usar sesión limpia y datos ficticios.
 
 | ID | Escenario / datos | Resultado esperado | Spec |
 | --- | --- | --- | --- |
