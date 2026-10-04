@@ -16,4 +16,4 @@ Precondiciones: Swag Labs accesible, almacenamiento limpio, usuario público `st
 | 6 | Revisar producto e importes antes de Finish | Subtotal $29.99, impuesto $2.40, total $32.39 |
 | 7 | Seleccionar Finish | Confirmación “Thank you for your order!” y carrito vacío |
 
-Estos importes son el oráculo del catálogo de demostración usado por el test; si cambia el catálogo, investigar y actualizar la expectativa con evidencia. Registrar fecha, navegador, resultado real y evidencia al ejecutar. No hay ticket Jira asociado verificable.
+Los importes esperados corresponden al producto de demostración seleccionado. Si cambia el catálogo, revisar las expectativas del test. Para la ejecución manual, registrar fecha, navegador, resultado y evidencia.

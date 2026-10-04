@@ -27,7 +27,3 @@ La suite contiene 11 escenarios: 5 de autenticación, 2 de carrito y 4 de checko
 ## Límites
 
 El viewport móvil no representa un dispositivo real. Esta ejecución no acredita pruebas de API, carga, seguridad ni otros navegadores. La ejecución manual del caso de compra sigue pendiente de evidencia propia.
-
-## Antecedente de instalación local
-
-Durante la preparación inicial del paquete, la descarga del binario de Cypress no pudo descomprimirse. Ese bloqueo local no se reprodujo en los jobs exitosos de GitHub Actions y no se atribuye a Swag Labs.
