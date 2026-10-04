@@ -1,24 +1,65 @@
-# Cibersecurity Journey
+# Nahuel Cejas · QA Portfolio
 
-## About
-This repository documents my transition from QA Testing to Cybersecurity, focusing on **Security Testing** and **Application Security (AppSec)**.
+**E-commerce testing · Test design · Cypress automation · GitHub Actions**
 
-## Current Status
-- **OS:** Ubuntu 24.04 (via WSL2)
-- **Tools Installed:** 
-  - Nmap 7.94 (Network Scanning)
-  - Python 3.12 (Automation)
-  - Git 2.43 (Version Control)
-- **Focus:** Networking fundamentals, Linux, and Security basics.
+Portfolio de práctica de Quality Assurance sobre [Swag Labs](https://www.saucedemo.com/). El proyecto conecta riesgos de negocio, casos manuales y pruebas automatizadas del recorrido de compra.
 
-## Goals
-- Master Linux and Networking protocols
-- Learn Python for Security Automation
-- Complete TryHackMe & HackTheBox labs
-- Achieve CompTIA Security+ Certification
+[LinkedIn](https://www.linkedin.com/in/nahuel-cejas-050452308) · [Plan de pruebas](Test-Plans/TP_Master_Plan.md) · [Matriz de cobertura](Test-Cases/COVERAGE.md) · [Automatización](Automation-Cypress/e2e)
 
-## Why Cybersecurity + QA?
-Combining QA testing skills with security knowledge allows me to:
-- Identify both functional bugs and security vulnerabilities.
-- Ensure secure coding practices from the start.
-- Perform Security Testing (SAST/DAST) alongside functional testing.
+## Recorrido para revisar el proyecto
+
+1. **Criterio de QA:** el [plan](Test-Plans/TP_Master_Plan.md) prioriza autenticación y compra por su impacto.
+2. **Diseño de pruebas:** la [matriz](Test-Cases/COVERAGE.md) incluye caminos felices, negativos y validaciones.
+3. **Código:** la suite verifica login, carrito, checkout y cierre de sesión con selectores `data-test` y aserciones de estado.
+4. **Evidencia:** consultar [el registro de validación](docs/VALIDATION.md) y, cuando esté publicado, las ejecuciones de [Actions](https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing/actions). Una prueba escrita no equivale a una prueba aprobada.
+
+## Ejecutar localmente
+
+Requisitos: Node.js 22 LTS, npm y acceso a internet. En Linux, Cypress necesita sus [dependencias de sistema](https://docs.cypress.io/app/get-started/install-cypress#Linux-Prerequisites).
+
+```bash
+git clone https://github.com/nahueleze2004-glitch/QA-Portfolio-Ecommerce-Testing.git
+cd QA-Portfolio-Ecommerce-Testing
+npm ci
+npx cypress install
+npm test
+```
+
+```bash
+npm run test:open     # Interfaz interactiva
+npm run test:mobile   # Mismos flujos en viewport 390 × 844
+npm run test:report   # Resultados JUnit en reports/
+```
+
+La suite utiliza únicamente usuarios y contraseña de demostración publicados por Swag Labs. No requiere cuentas personales ni secretos. El viewport móvil verifica flujos con una ventana estrecha; no representa pruebas en dispositivos reales.
+
+## Qué contiene
+
+| Área | Entregable |
+| --- | --- |
+| Estrategia | Alcance, riesgos, criterios de entrada/salida y límites |
+| Testing manual | Compra completa y matriz de escenarios |
+| Automatización | 11 casos Cypress en JavaScript, aislados entre sí |
+| CI | Ejecución en escritorio y viewport móvil, reportes JUnit, videos y capturas de fallos |
+| Defectos | Plantilla reproducible y revisión de un ejemplo histórico no confirmado |
+
+## Decisiones técnicas
+
+- Se conserva Cypress para desarrollar la base existente del repositorio.
+- `baseUrl` centraliza el entorno; los comandos reutilizan login y preparación del carrito.
+- No se usan esperas de tiempo fijo ni reintentos para ocultar fallos.
+- Checkout valida producto, subtotal, impuestos, total y confirmación final.
+- El pipeline usa permisos de lectura y no necesita Cypress Cloud.
+
+## Estado y límites
+
+Proyecto educativo independiente, sin relación laboral ni afiliación con Sauce Labs. No representa un sistema de pagos real. No se afirman defectos, cobertura porcentual ni resultados sin evidencia. El antiguo reporte de error 500 está marcado como **ejemplo no verificado**.
+
+## Próximas iteraciones
+
+- Adjuntar una ejecución manual fechada con evidencias.
+- Ampliar compatibilidad a Chrome y Firefox después de validar la suite base.
+- Agregar un proyecto separado de API testing con un servicio documentado.
+- Incorporar Playwright/TypeScript como ejercicio posterior de comparación.
+
+Mi formación en ciberseguridad complementa el interés por calidad de software; este repositorio se concentra en QA funcional.
