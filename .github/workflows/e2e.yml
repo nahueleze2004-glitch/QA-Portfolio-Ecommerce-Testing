@@ -1,4 +1,4 @@
-name: E-commerce E2E
+name: Cypress Regression
 on:
   push:
   pull_request:
@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run E2E
-        run: npm run test:report -- --config viewportWidth=${{ matrix.width }},viewportHeight=${{ matrix.height }}
+        run: npm run cypress:report -- --config viewportWidth=${{ matrix.width }},viewportHeight=${{ matrix.height }}
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -42,3 +42,4 @@ jobs:
             cypress/videos/
           if-no-files-found: warn
           retention-days: 14
+

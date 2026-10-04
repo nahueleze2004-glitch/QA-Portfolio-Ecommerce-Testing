@@ -1,4 +1,6 @@
-# Plan de pruebas · Swag Labs
+# Plan de regresión Cypress · Swag Labs
+
+La [estrategia principal](../docs/TEST-STRATEGY.md) cubre Playwright, API y SQL. Este documento describe la suite Cypress conservada.
 
 **Responsable del portfolio:** Nahuel Cejas
 **Tipo:** proyecto de práctica · **Estado:** suite automatizada ejecutada en CI; ver resultados en [VALIDATION](../docs/VALIDATION.md)
@@ -35,3 +37,4 @@ Todos los casos de la matriz ejecutados en ambos tamaños; fallos investigados y
 ## Evidencia y defectos
 
 Actions conserva reportes JUnit, videos y capturas de fallos durante 14 días. Para una revisión manual registrar fecha, navegador, pasos, resultado observado y captura propia. Usar la [plantilla de defectos](../Bug-Reports/TEMPLATE.md). No atribuir errores HTTP sin respuesta de red reproducible.
+

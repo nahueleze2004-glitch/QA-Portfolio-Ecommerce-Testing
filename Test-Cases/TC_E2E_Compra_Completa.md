@@ -17,3 +17,4 @@ Precondiciones: Swag Labs accesible, almacenamiento limpio, usuario público `st
 | 7 | Seleccionar Finish | Confirmación “Thank you for your order!” y carrito vacío |
 
 Los importes esperados corresponden al producto de demostración seleccionado. Si cambia el catálogo, revisar las expectativas del test. Para la ejecución manual, registrar fecha, navegador, resultado y evidencia.
+
