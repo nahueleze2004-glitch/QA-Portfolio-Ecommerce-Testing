@@ -11,3 +11,4 @@ Cypress.Commands.add('startCheckout', () => {
   cy.get('[data-test="shopping-cart-link"]').click();
   cy.get('[data-test="checkout"]').click();
 });
+

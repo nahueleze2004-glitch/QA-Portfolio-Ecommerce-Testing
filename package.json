@@ -1,18 +1,27 @@
 {
-  "name": "nahuel-qa-ecommerce-portfolio",
+  "name": "nahuel-cejas-qa-engineer-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Risk-based QA practice portfolio for Swag Labs",
+  "description": "QA engineering portfolio: Playwright, TypeScript, API testing, SQL and CI",
   "scripts": {
-    "test": "cypress run",
-    "test:open": "cypress open",
-    "test:mobile": "cypress run --config viewportWidth=390,viewportHeight=844",
-    "test:report": "cypress run --reporter junit --reporter-options mochaFile=reports/results-[hash].xml,toConsole=true"
+    "test": "playwright test",
+    "test:ui": "playwright test --project=chromium",
+    "test:mobile": "playwright test --project=mobile-chromium",
+    "test:api": "playwright test --project=api",
+    "test:sql": "python -m unittest discover -s sql -p 'test_*.py' -v",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:report": "cypress run --reporter junit --reporter-options mochaFile=reports/results-[hash].xml,toConsole=true"
   },
   "engines": {
     "node": ">=22"
   },
   "devDependencies": {
-    "cypress": "16.1.1"
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.20.5",
+    "cypress": "16.1.1",
+    "typescript": "7.0.2"
   }
 }

@@ -1,4 +1,6 @@
-# Matriz de cobertura
+# Cobertura de regresión Cypress
+
+La [matriz principal](../docs/COVERAGE.md) documenta los escenarios de Playwright, API y SQL.
 
 Cada ID aparece en el título del test. La suite automatizada finalizó correctamente en escritorio y viewport móvil el 2026-10-04; ver [registro](../docs/VALIDATION.md). Para pruebas manuales usar sesión limpia y datos ficticios.
 
@@ -15,3 +17,4 @@ Cada ID aparece en el título del test. La suite automatizada finalizó correcta
 | CHECKOUT-002 | Nombre vacío, resto completo | First Name is required | [checkout](../Automation-Cypress/e2e/checkout.cy.js) |
 | CHECKOUT-003 | Apellido vacío, resto completo | Last Name is required | [checkout](../Automation-Cypress/e2e/checkout.cy.js) |
 | CHECKOUT-004 | Código postal vacío, resto completo | Postal Code is required | [checkout](../Automation-Cypress/e2e/checkout.cy.js) |
+

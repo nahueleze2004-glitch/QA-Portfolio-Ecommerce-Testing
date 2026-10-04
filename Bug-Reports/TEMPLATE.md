@@ -27,3 +27,4 @@ Captura o video propio, log y enlace a ejecución, si aplica. Para un error HTTP
 ## Reproducibilidad
 
 Intentos / fallos, alternativas y estado después de repetir la prueba.
+

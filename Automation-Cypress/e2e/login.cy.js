@@ -36,3 +36,4 @@ describe('Authentication', () => {
     cy.location('pathname').should('not.eq', '/inventory.html');
   });
 });
+

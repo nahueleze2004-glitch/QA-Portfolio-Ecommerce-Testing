@@ -16,3 +16,4 @@ El reporte inicial describía un error HTTP 500 al ingresar `1234@#` como códig
 **Severidad y prioridad:** pendientes de evaluación si se confirma un problema.
 
 Documentar la ejecución y, si se confirma un defecto, completar la [plantilla de reporte](TEMPLATE.md) con la evidencia correspondiente.
+

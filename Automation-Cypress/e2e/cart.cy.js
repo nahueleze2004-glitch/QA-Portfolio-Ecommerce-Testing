@@ -19,3 +19,4 @@ describe('Shopping cart', () => {
     cy.get('[data-test="shopping-cart-badge"]').should('not.exist');
   });
 });
+
